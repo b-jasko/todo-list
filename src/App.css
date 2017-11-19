@@ -20,7 +20,6 @@ body {
 .tasks-block {
     width: 300px;
     background-color: #474748;
-    min-height: 200px;
     margin: 20px;
     padding: 10px;
     margin-right: auto;
@@ -40,4 +39,18 @@ body {
 
 .add-task-button {
 
+}
+
+.normal {
+    background-color: #dcdcde;
+    color: #363637;
+}
+
+.wrong {
+    background-color: indianred;
+    color: white;
+}
+
+.wrong::placeholder {
+    color: #dcdcde;
 }

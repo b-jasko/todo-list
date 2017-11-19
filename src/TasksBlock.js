@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 import Task from './Task'
+import TaskInput from './TaskInput'
 
 class TasksBlock extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             tasksNumber: 0,
             tasks: []
         }
     }
 
-    _addTask() {
+    _addTask(taskBody) {
         const task = {
             id: Math.floor(Math.random()*(9999 - this.state.tasks.length + 1)) + this.state.tasks.length,
+            body: taskBody,
         };
         this.setState({
             tasksNumber: this.state.tasksNumber + 1,
@@ -34,6 +36,7 @@ class TasksBlock extends Component {
         return this.state.tasks.map((task) => {
            return (<Task
                id={task.id}
+               body={task.body}
                delete={this._deleteTask.bind(this)}
                />
            );
@@ -55,9 +58,9 @@ class TasksBlock extends Component {
         return (
           <div className="tasks-block">
               <h2 className="day-name">{this.props.day}</h2>
-              <h3>{this._tasksCounter(tasks.length) + 'for ' + this.props.day.toLowerCase()}</h3>
+              <h4>{this._tasksCounter(tasks.length) + 'for ' + this.props.day.toLowerCase()}</h4>
               {tasks}
-              <button className="add-task-button" onClick={this._addTask.bind(this)}>Add task</button>
+              <TaskInput add={this._addTask.bind(this)}/>
           </div>
         );
     }
