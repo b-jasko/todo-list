@@ -6,7 +6,7 @@ body {
 .wrapper {
     background-color: #363637;
     margin: 20px;
-    width: 1000px;
+    width: 1200px;
     min-height: 720px;
     margin-right: auto;
     margin-left: auto;
@@ -18,13 +18,11 @@ body {
 }
 
 .tasks-block {
-    width: 300px;
-    background-color: #474748;
+    width: 340px;
     margin: 20px;
     padding: 10px;
-    margin-right: auto;
-    margin-left: auto;
-
+    background-color: #474748;
+    float: left;
 }
 
 .day-name {
@@ -32,7 +30,7 @@ body {
     text-align: center;
 }
 
-.task-div {
+.task-div-no-priority {
     height: 40px;
     border: solid;
 }
@@ -53,4 +51,20 @@ body {
 
 .wrong::placeholder {
     color: #dcdcde;
+}
+
+.delete-task-button {
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+.set-priority-button {
+    float:left;
+    height: 100%;
+    border-left: solid;
+}
+
+.priority-div {
+
 }

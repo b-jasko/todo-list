@@ -6,9 +6,9 @@ class Wrapper extends Component {
         return (
             <div className="wrapper">
                 <h1 className="wrapper-heading">TO DO List</h1>
-                <TasksBlock  day="Today"/>
-                <TasksBlock day="Tomorrow"/>
-                <TasksBlock day="This week"/>
+                <TasksBlock day="Today" />
+                <TasksBlock day="Tomorrow" />
+                <TasksBlock day="This week" />
             </div>
         );
     }
