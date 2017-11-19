@@ -1,0 +1,43 @@
+body {
+    background-color: gray;
+    color: white;
+}
+
+.wrapper {
+    background-color: #363637;
+    margin: 20px;
+    width: 1000px;
+    min-height: 720px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper-heading {
+    color: #dcdcde;
+    text-align: center;
+}
+
+.tasks-block {
+    width: 300px;
+    background-color: #474748;
+    min-height: 200px;
+    margin: 20px;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.day-name {
+    color: #dcdcde;
+    text-align: center;
+}
+
+.task-div {
+    height: 40px;
+    border: solid;
+}
+
+.add-task-button {
+
+}
