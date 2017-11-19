@@ -43,7 +43,7 @@ class TasksBlock extends Component {
         });
     }
 
-    _tasksCounter(tasksCount) {
+    static _tasksCounter(tasksCount) {
         if(tasksCount === 0) {
             return 'You have no tasks '
         } else if(tasksCount === 1) {
@@ -58,7 +58,7 @@ class TasksBlock extends Component {
         return (
           <div className="tasks-block">
               <h2 className="day-name">{this.props.day}</h2>
-              <h4>{this._tasksCounter(tasks.length) + 'for ' + this.props.day.toLowerCase()}</h4>
+              <h4>{TasksBlock._tasksCounter(tasks.length) + 'for ' + this.props.day.toLowerCase()}</h4>
               {tasks}
               <TaskInput add={this._addTask.bind(this)}/>
           </div>

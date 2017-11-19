@@ -39,10 +39,10 @@ class Task extends Component {
                     <div className="set-priority-button" onClick={this._togglePriority.bind(this)}>
                         Set Priority
                     </div>
-                    <div style={{ clear:'both' }}></div>
+                    <div style={{ clear:'both' }}/>
                 </div>
                 <TaskPriority isHidden={isHidden} changePriority={this._changePriority.bind(this)}/>
-                <div style={{ clear:'both' }}></div>
+                <div style={{ clear:'both' }}/>
             </div>
         )
     }
