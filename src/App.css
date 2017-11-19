@@ -30,9 +30,15 @@ body {
     text-align: center;
 }
 
+.task-div {
+    margin-bottom: 10px;
+}
+
 .task-div-no-priority {
+    background-color: #363637;
+    width: 340px;
     height: 40px;
-    border: solid;
+    line-height: 40px;
 }
 
 .add-task-button {
@@ -55,16 +61,27 @@ body {
 
 .delete-task-button {
     float: left;
-    width: 70%;
-    height: 100%;
+    width: 231px;
+    height: 40px;
+    padding-left: 5px;
 }
 
 .set-priority-button {
     float:left;
-    height: 100%;
-    border-left: solid;
+    height: 40px;
+    width: 99px;
+    background-color: gray;
+    padding-left: 5px;
 }
 
 .priority-div {
+    width: 104px;
+    height: 30px;
+    float: right;
+}
 
+.priority-color {
+    float: left;
+    width: 26px;
+    height: 30px;
 }

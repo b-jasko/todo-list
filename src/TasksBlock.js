@@ -35,7 +35,7 @@ class TasksBlock extends Component {
     _getTasks() {
         return this.state.tasks.map((task) => {
            return (<Task
-               id={task.id}
+               key={task.id}
                body={task.body}
                delete={this._deleteTask.bind(this)}
                />
